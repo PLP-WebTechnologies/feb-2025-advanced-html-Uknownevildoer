@@ -1,1 +1,127 @@
-i
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>User Registration</title>
+
+</head>
+<body>
+<ol type="I">
+  <li>Eunice Snow</li>
+  <li>Will Smith</li>
+  <li>Carol Davis</li>
+  <li>Ronan Achieng</li>
+  <li>Chris Brown</li>
+</ol>
+
+<img src="https://images.pexels.com/photos/31611876/pexels-photo-31611876/free-photo-of-elegant-coffee-and-sweet-treats-setup.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" width=500 height =600 alt=cup of coffee</img>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Mobile</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eunice Snow</td>
+      <td>123 Maple Street, Tz</td>
+      <td>+254 731234544</td>
+      <td>eunice@example.com</td>
+    </tr>
+    <tr>
+      <td>Will Smith</td>
+      <td>456 Oak Avenue, Ke</td>
+      <td>+254 7545454348</td>
+      <td>will@example.com</td>
+    </tr>
+    <tr>
+      <td>Carol Davis</td>
+      <td>789 Pine Road, TX</td>
+      <td>+254 78473563256</td>
+      <td>carol@example.com</td>
+    </tr>
+    <tr>
+      <td>Ronan Achieng</td>
+      <td>321 Birch Blvd, DRC</td>
+      <td>+254 73543260500</td>
+      <td>ronan@example.com</td>
+    </tr>
+    <tr>
+      <td>Chris Brown</td>
+      <td>654 Cedar Lane, Ug</td>
+      <td>+254 78342552323</td>
+      <td>chris@example.com</td>
+    </tr>
+  </tbody>
+</table>
+
+<form action="/register" method="POST">
+  <!-- User Information -->
+  <div>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="John Doe" required />
+  </div>
+
+  <div>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="example@example.com" required />
+  </div>
+
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6" />
+  </div>
+
+  <div>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div>
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="" disabled selected>Select your country</option>
+      <option value="ke">Kenya</option>
+      <option value="Tz">Tanzania</option>
+      <option value="uk">United Kingdom</option>
+      <option value="us">America</option>
+    </select>
+  </div>
+
+  <!-- Radio Buttons -->
+  <div>
+    <p>Gender:</p>
+    <label>
+      <input type="radio" name="gender" value="male" required /> Male
+    </label>
+    <label>
+      <input type="radio" name="gender" value="female" /> Female
+    </label>
+    <label>
+      <input type="radio" name="gender" value="other" /> Other
+    </label>
+  </div>
+
+  <!-- Checkboxes -->
+  <div>
+    <p>Interests:</p>
+    <label>
+      <input type="checkbox" name="interests" value="coding" /> Coding
+    </label>
+    <label>
+      <input type="checkbox" name="interests" value="music" /> Music
+    </label>
+    <label>
+      <input type="checkbox" name="interests" value="sports" /> Sports
+    </label>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit">Register</button>
+</form>
+</body>
+</html>
